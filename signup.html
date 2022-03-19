@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/hover-min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/signup.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <title>signup</title>
+</head>
+    
+    <!-- start layout -->
+    <div class="layout p-3">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand text-light fw-bold" href="#"><i class="fa-regular fa-hand-back-fist"></i><span>S</span>ahem</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#targetDrop" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="targetDrop">
+                    <ul class="navbar-nav mb-2 mb-lg-0">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Pages
+                        </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Authentication
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Application
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Ecommerce
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Docs
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <a class="btn rounded-pill bg-gardient-dark text-light text-uppercase px-4 d-none d-lg-block" href="#">Buy Now</a>
+            </div>
+        </nav>
+    </div>
+    <!-- end layout -->
+    <!-- start form  -->
+    <div class="form">
+        <h2>Register With</h2>
+        <ul class="register list-unstyled">
+            <li><a href="#" class="hvr-grow"><i class="fa-brands fa-facebook"></i></a></li>
+            <li><a href="#" class="hvr-grow"><i class="fa-brands fa-apple"></i></a></li>
+            <li><a href="#" class="hvr-grow"><i class="fa-brands fa-google"></i></a></li>
+        </ul>
+        <h3>or</h3>
+        <form action="" method="get">
+            <div class="form-floating mb-3 mt-3">
+                <input type="text" class="form-control" id="name" placeholder="Name" name="name" required>
+                <label for="name">Name</label>
+            </div>
+            <div class="form-floating mb-3 mt-3">
+                <input type="tel" class="form-control" id="phone" placeholder="Number Phone" name="phone" required>
+                <label for="phone">Number Phone</label>
+            </div>
+            <div class="form-floating mb-3 mt-3 social">
+                <select class="form-select" id="socialstatus" name="socialstatus">
+                    <option>Single</option>
+                    <option>Married</option>
+                </select>
+                <label for="socialstatus" class="form-label">Social Status</label>
+            </div>
+            <div class="form-floating mb-3 mt-3 gender">
+                <select class="form-select" id="gender" name="gender">
+                    <option>Male</option>
+                    <option>Female</option>
+                </select>
+                <label for="gender" class="form-label">Gender</label>
+            </div>
+            <div class="form-floating mt-3 mb-3">
+                <input type="text" class="form-control" id="hosLocation" placeholder="Hospital Location" name="hosLocation">
+                <label for="hosLocation">Hospital Location</label>
+            </div>
+            <div class="form-floating mb-3 mt-3">
+                <input type="text" class="form-control" id="job" placeholder="Job" name="job">
+                <label for="job">Job</label>
+            </div>
+            <div class="form-floating mb-3 mt-3">
+                <input type="text" class="form-control" id="address" placeholder="Address" name="address">
+                <label for="address">Address</label>
+            </div>
+            <div class="form-floating mb-3 mt-3">
+                <input type="date" class="form-control" id="date" placeholder="Date" name="date">
+                <label for="date">Date</label>
+            </div>
+            <div class="form-floating mb-3 mt-3">
+                <select class="form-select" id="governorate" name="governorate">
+                    <option>Cairo</option>
+                    <option>Alex</option>
+                    <option>Giza</option>
+                </select>
+                <label for="governorate" class="form-label">Governorate</label>
+            </div>
+            <div class="form-floating mb-3 mt-3">
+                <select class="form-select" id="city" name="city">
+                    <option>Nasr City</option>
+                    <option>Mansoura</option>
+                    <option>Tanta</option>
+                    <option>Luxor</option>
+                </select>
+                <label for="city" class="form-label">City</label>
+            </div>
+            <div class="form-floating mb-3 mt-3">
+                <select class="form-select" id="region" name="region">
+                    <option>Region 1</option>
+                    <option>Region 2</option>
+                </select>
+                <label for="region" class="form-label">Region</label>
+            </div>
+            <div class="was-validated">
+                <div class="form-check mb-3">
+                    <input class="form-check-input" type="checkbox" id="myCheck" name="remember" required>
+                    <label class="form-check-label" for="myCheck">I agree The Terms and Condition</label>
+                </div>
+            </div>
+            <button type="submit" class="btn bg-gardient-dark text-uppercase hvr-grow">Sign Up</button>
+            <p>Already have an account? <a href="signin.html">Sign in</a></p>
+        </form>
+    </div>
+    <!-- end form  -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/all.min.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery.nicescroll.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
