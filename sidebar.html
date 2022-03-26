@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <title>Sahem</title>
+</head>
+<body>
+    
+    <button class="mytoggler">
+        <i class="fa-solid fa-bars fa-2x"></i>
+    </button>
+    <div class="side" id="demo">
+        <a href="#" class="logo"><i class="fa-regular fa-hand-back-fist"></i><span>S</span>ahem</a>
+        <ul class="mylinks">
+            <li class="active"><a href="#"><i class="fa-solid fa-table-columns"></i>Dashboard</a></li>
+            <li><a href="#"><i class="fa-solid fa-table-cells"></i>Tables</a></li>
+            <li data-bs-toggle="collapse" data-bs-target="#mycollabse"><a href="#"><i class="fa-brands fa-bilibili"></i>Biling</a></li>
+            <ul id="mycollabse" class="collapse">
+                <li><a href="#"><i class="fa-solid fa-id-card"></i>info</a></li>
+                <li><a href="#"><i class="fa-solid fa-id-card"></i>info</a></li>
+                <li><a href="#"><i class="fa-solid fa-id-card"></i>info</a></li>
+            </ul>
+            <li><a href="#"><i class="fa-solid fa-vr-cardboard"></i>Virtual Reality</a></li>
+            <li><a href="#"><i class="fa-solid fa-key"></i>RTL</a></li>
+        </ul>
+        <p>Account Pages</p>
+        <ul class="myAccPages">
+            <li><a href="#"><i class="fa-solid fa-user"></i>Profile</a></li>
+            <li><a href="#"><i class="fa-solid fa-user-plus"></i>Sign In</a></li>
+            <li><a href="#"><i class="fa-solid fa-id-card"></i>Sign Up</a></li>
+        </ul>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/all.min.js"></script>
+    <script src="js/sidebar.js"></script>
+</body>
+</html>

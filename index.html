@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -14,10 +17,70 @@
 </head>
 <body>
     
+    <button class="mytoggler">
+        <i class="fa-solid fa-bars fa-2x"></i>
+    </button>
+    <div class="side" id="demo">
+        <a href="index.html" class="logo"><i class="fa-regular fa-hand-back-fist"></i><span>S</span>ahem</a>
+        <ul class="mylinks">
+            <li class="active"><a href="index.html"><i class="fa-solid fa-table-columns"></i>Dashboard</a></li>
+            <li><a href="tables.html"><i class="fa-solid fa-table-cells"></i>Tables</a></li>
+            <li data-bs-toggle="collapse" data-bs-target="#mycollabse"><a href="#"><i class="fa-brands fa-bilibili"></i>Biling</a></li>
+            <ul id="mycollabse" class="collapse">
+                <li><a href="#"><i class="fa-solid fa-id-card"></i>info</a></li>
+                <li><a href="#"><i class="fa-solid fa-id-card"></i>info</a></li>
+                <li><a href="#"><i class="fa-solid fa-id-card"></i>info</a></li>
+            </ul>
+            <li><a href="#"><i class="fa-solid fa-vr-cardboard"></i>Virtual Reality</a></li>
+            <li><a href="#"><i class="fa-solid fa-key"></i>RTL</a></li>
+        </ul>
+        <p>Account Pages</p>
+        <ul class="myAccPages">
+            <li><a href="#"><i class="fa-solid fa-user"></i>Profile</a></li>
+            <li><a href="signin.html"><i class="fa-solid fa-user-plus"></i>Sign In</a></li>
+            <li><a href="signup.html"><i class="fa-solid fa-id-card"></i>Sign Up</a></li>
+        </ul>
+    </div>
+
+    <div class="mynav w-100 my-2">
+        <div class="container-fluid d-flex align-items-center">
+            <h4 class="page">Dashboard /</h4>
+            <div class="d-flex align-items-center myform position-relative ms-md-auto ms-3">
+                <i class="fa fa-search"></i>
+                <form action="" class="me-3">
+                    <input class="form-control myinput ps-5 rounded-3" type="text" placeholder=" Type here...">
+                </form>
+            </div>
+            <div class="myi d-flex justify-content-around align-items-center">
+                <a href="#"><i class="fa-solid fa-user"></i></a>
+                <a href="#"><i class="fa-solid fa-gear"></i></a>
+                <a href="#"><i class="fa-solid fa-bell"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="mydash my-5 d-flex align-items-center justify-content-between gap-3">
+        <div class="buildby bg-white p-3">
+            <div class="contain w-100 h-100">
+                <p>Built by developers</p>
+                <h3 class="mt-2">Soft UI Dashboard</h3>
+                <p class="my-4">From colors, cards, typography to complex elements, you will find the full documentation.</p>
+                <a href="#" class="readmore">Read More <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+        </div>
+        <div class="workwith bg-white p-3">
+            <div class="contain w-100 h-100">
+                <h3 class="mt-2">Work with the rockets</h3>
+                <p class="my-4">Wealth creation is an evolutionarily recent positive-sum game. It is all about who take the opportunity first.</p>
+                <a href="#" class="readmore">Read More <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </div>
+
 
 
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/all.min.js"></script>
-    <script src="js/main.js"></script>
+    <script src="js/sidebar.js"></script>
 </body>
 </html>

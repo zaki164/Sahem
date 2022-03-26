@@ -1,7 +1,7 @@
 :root {
     --main-color: #366D9F;
     --second-color: #f5f6f7;
-    /* --third-color: #e0ecde; */
+    --third-color: #67748e;
 }
 body {
     background-color: var(--second-color);
