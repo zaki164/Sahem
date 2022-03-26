@@ -39,16 +39,6 @@ a:hover {
     overflow-y: auto;
     z-index: 10000;
 }
-.side:after {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: var(--second-color);
-    z-index: -1;
-}
 .side .logo {
     font-size: 30px;
     position: relative;
@@ -108,6 +98,7 @@ a:hover {
     .side {
         width: auto;
         left: -100%;
+        background-color: var(--second-color);
     }
     .side.open {
         left: 0;
