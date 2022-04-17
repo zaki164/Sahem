@@ -14,6 +14,18 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <title>Sahem</title>
+    <style>
+    
+        .mycaseform .holder {
+            width: 33%;
+        }
+        @media (max-width: 767px) {
+            .mycaseform .holder {
+                width: 50%;
+            }
+        }
+
+    </style>
 </head>
 <body>
     
@@ -64,54 +76,60 @@
 
     <div class="mycaseform">
         <form action="" method="get">
-            <label for="myname">Name</label>
-            <input type="text" name="name" id="myname" required>
-            <label for="myphone">PhoneNumber</label>
-            <input type="tel" name="phone" id="myphone">
-            <label for="myid">National Id</label>
-            <input type="text" name="nationalId" id="myid">
-            <label for="job">Job</label>
-            <input type="text" name="job" id="job">
-            <label for="address">Address</label>
-            <input type="text" name="address" id="address">
-            <label for="bio">Bio</label>
-            <input type="text" name="bio" id="bio">
-            <label for="birthDate">BirthDate</label>
-            <input type="date" name="birthDate" id="birthDate">
-            <!-- <input class="form-control" type="file" id="nationalimage" name="nationalimage" value="browse">
-                <input class="form-control" type="file" id="profileimage" name="profileimage" value="browse"> -->
-            <label>NationalIdImage</label>
-            <input type="file" class="form-control" id="nationalIdImage" name="nationalIdImage">
-            <label>ProfileImage</label>
-            <input type="file" class="form-control" id="profileImage" name="profileImage">
-            <label for="gender">Gender</label>
-            <select name="gender" id="gender">
-                <option value="Male">Male</option>
-                <option value="Female">Female</option>
-            </select>
-            <label for="socialStatus">Social Status</label>
-            <select name="socialStatus" id="socialStatus">
-                <option value="Single">Single</option>
-                <option value="Married">Married</option>
-            </select>
-            <label for="city">City</label>
-            <select name="city" id="city">
-                <option value="Aga">Aga</option>
-                <option value="Mansoura">Mansoura</option>
-            </select>
-            <label for="region">Region</label>
-            <select name="region" id="region">
-                <option value="MetElamel">Met Elamel</option>
-                <option value="info">info</option>
-            </select>
-            <label for="status">Status</label>
-            <select name="status" id="status">
-                <option value="Pending">Pending</option>
-                <option value="Accepted">Accepted</option>
-                <option value="Rejected">Rejected</option>
-            </select>
-            <input type="submit" value="Create">
-            <input type="reset" value="Cancel" class="bg-danger text-white">
+            <div class="cont">
+                <div class="holder">
+                    <label for="myname">Name</label>
+                    <input type="text" name="name" id="myname" required>
+                    <label for="myphone">PhoneNumber</label>
+                    <input type="tel" name="phone" id="myphone">
+                    <label for="myid">National Id</label>
+                    <input type="text" name="nationalId" id="myid">
+                    <label for="job">Job</label>
+                    <input type="text" name="job" id="job">
+                    <label for="address">Address</label>
+                    <input type="text" name="address" id="address">
+                </div>
+                <div class="holder">
+                    <label for="bio">Bio</label>
+                    <input type="text" name="bio" id="bio">
+                    <label for="birthDate">BirthDate</label>
+                    <input type="date" name="birthDate" id="birthDate">
+                    <label>NationalIdImage</label>
+                    <input type="file" class="form-control" id="nationalIdImage" name="nationalIdImage">
+                    <label>ProfileImage</label>
+                    <input type="file" class="form-control" id="profileImage" name="profileImage">
+                    <label for="gender">Gender</label>
+                    <select name="gender" id="gender">
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                    </select>
+                </div>
+                <div class="holder">
+                    <label for="socialStatus">Social Status</label>
+                    <select name="socialStatus" id="socialStatus">
+                        <option value="Single">Single</option>
+                        <option value="Married">Married</option>
+                    </select>
+                    <label for="city">City</label>
+                    <select name="city" id="city">
+                        <option value="Aga">Aga</option>
+                        <option value="Mansoura">Mansoura</option>
+                    </select>
+                    <label for="region">Region</label>
+                    <select name="region" id="region">
+                        <option value="MetElamel">Met Elamel</option>
+                        <option value="info">info</option>
+                    </select>
+                    <label for="status">Status</label>
+                    <select name="status" id="status">
+                        <option value="Pending">Pending</option>
+                        <option value="Accepted">Accepted</option>
+                        <option value="Rejected">Rejected</option>
+                    </select>
+                </div>                
+            </div>
+            <input type="submit" value="Create" class="bg-gardient-dark text-white me-1 hvr-wobble-top">
+            <input type="reset" value="Cancel" class="bg-dang text-white hvr-wobble-bottom">
         </form>
     </div>
 

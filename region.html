@@ -14,6 +14,25 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <title>Sahem</title>
+
+    <style>
+        .mycaseform {
+            width: 50%;
+            transform: translate(20%, 10%);
+        }
+        @media (max-width: 991px) {
+            .mycaseform {
+                transform: translate(0, 0);
+                margin: auto;
+                width: 60%;
+            }
+        }
+        @media (max-width: 767px) {
+            .mycaseform {
+                width: 90%;
+            }
+        }
+    </style>
 </head>
 <body>
     
@@ -76,8 +95,8 @@
             </select>
             <label for="myname">Name</label>
             <input type="text" name="name" id="myname" required>
-            <input type="submit" value="Create">
-            <input type="reset" value="Cancel" class="bg-danger text-white">
+            <input type="submit" value="Create" class="bg-gardient-dark text-white me-1 hvr-wobble-top">
+            <input type="reset" value="Cancel" class="bg-dang text-white hvr-wobble-bottom">
         </form>
     </div>
 
