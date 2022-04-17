@@ -13,3 +13,6 @@ body {
 .bg-gardient-light {
     background-image: linear-gradient(to right, #ffffff 40%, #e9d0ef);
 }
+.bg-dang {
+    background-image: linear-gradient(to right, rgb(162, 87, 87), rgb(161, 19, 19));
+}
