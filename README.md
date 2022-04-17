@@ -1,2 +1,0 @@
-# Sahem
-graduation
