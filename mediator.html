@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/sidebar.css">
     <link rel="stylesheet" href="css/navbar.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/case.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -23,9 +23,9 @@
     <div class="side" id="demo">
         <a href="index.html" class="logo"><i class="fa-regular fa-hand-back-fist"></i><span>S</span>ahem</a>
         <ul class="mylinks">
-            <li class="active"><a href="index.html"><i class="fa-solid fa-table-columns"></i>Dashboard</a></li>
+            <li><a href="index.html"><i class="fa-solid fa-table-columns"></i>Dashboard</a></li>
             <li><a href="tables.html"><i class="fa-solid fa-table-cells"></i>Tables</a></li>
-            <li data-bs-toggle="collapse" data-bs-target="#mycollabse"><a href="#"><i class="fa-brands fa-bilibili"></i>Create</a></li>
+            <li class="active" data-bs-toggle="collapse" data-bs-target="#mycollabse"><a href="#"><i class="fa-brands fa-bilibili"></i>Create</a></li>
             <ul id="mycollabse" class="collapse">
                 <li><a href="case.html"><i class="fa-solid fa-id-card"></i>Case</a></li>
                 <li><a href="mediator.html"><i class="fa-solid fa-id-card"></i>Mediator</a></li>
@@ -62,28 +62,63 @@
         </div>
     </div>
 
-    <div class="mydash d-flex align-items-center justify-content-between gap-3">
-        <div class="buildby bg-white p-3">
-            <div class="contain w-100 h-100">
-                <p>Built by developers</p>
-                <h3 class="mt-2">Soft UI Dashboard</h3>
-                <p class="my-4">From colors, cards, typography to complex elements, you will find the full documentation.</p>
-                <a href="#" class="readmore">Read More <i class="fa-solid fa-arrow-right"></i></a>
-            </div>
-        </div>
-        <div class="workwith bg-white p-3">
-            <div class="contain w-100 h-100">
-                <h3 class="mt-2">Work with the rockets</h3>
-                <p class="my-4">Wealth creation is an evolutionarily recent positive-sum game. It is all about who take the opportunity first.</p>
-                <a href="#" class="readmore">Read More <i class="fa-solid fa-arrow-right"></i></a>
-            </div>
-        </div>
+    <div class="mycaseform">
+        <form action="" method="get">
+            <label for="myname">Name</label>
+            <input type="text" name="name" id="myname" required>
+            <label for="myphone">PhoneNumber</label>
+            <input type="tel" name="phone" id="myphone">
+            <label for="myid">National Id</label>
+            <input type="text" name="nationalId" id="myid">
+            <label for="job">Job</label>
+            <input type="text" name="job" id="job">
+            <label for="address">Address</label>
+            <input type="text" name="address" id="address">
+            <label for="bio">Bio</label>
+            <input type="text" name="bio" id="bio">
+            <label for="birthDate">BirthDate</label>
+            <input type="date" name="birthDate" id="birthDate">
+            <!-- <input class="form-control" type="file" id="nationalimage" name="nationalimage" value="browse">
+                <input class="form-control" type="file" id="profileimage" name="profileimage" value="browse"> -->
+            <label>NationalIdImage</label>
+            <input type="file" class="form-control" id="nationalIdImage" name="nationalIdImage">
+            <label>ProfileImage</label>
+            <input type="file" class="form-control" id="profileImage" name="profileImage">
+            <label for="gender">Gender</label>
+            <select name="gender" id="gender">
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+            </select>
+            <label for="socialStatus">Social Status</label>
+            <select name="socialStatus" id="socialStatus">
+                <option value="Single">Single</option>
+                <option value="Married">Married</option>
+            </select>
+            <label for="city">City</label>
+            <select name="city" id="city">
+                <option value="Aga">Aga</option>
+                <option value="Mansoura">Mansoura</option>
+            </select>
+            <label for="region">Region</label>
+            <select name="region" id="region">
+                <option value="MetElamel">Met Elamel</option>
+                <option value="info">info</option>
+            </select>
+            <label for="status">Status</label>
+            <select name="status" id="status">
+                <option value="Pending">Pending</option>
+                <option value="Accepted">Accepted</option>
+                <option value="Rejected">Rejected</option>
+            </select>
+            <input type="submit" value="Create">
+            <input type="reset" value="Cancel" class="bg-danger text-white">
+        </form>
     </div>
-
 
 
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/all.min.js"></script>
     <script src="js/sidebar.js"></script>
+
 </body>
 </html>
