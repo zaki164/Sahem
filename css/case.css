@@ -39,7 +39,8 @@
     resize: none;
 }
 .mycaseform input[type="submit"],
-.mycaseform input[type="reset"] {
+.mycaseform input[type="reset"],
+.mycaseform input[type="button"] {
     width: 120px;
     border: none;
     margin: 0 0 10px;
