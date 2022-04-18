@@ -70,35 +70,37 @@
                     <label for="myname">Name</label>
                     <input type="text" name="name" id="myname" required>
                     <label for="myphone">PhoneNumber</label>
-                    <input type="tel" name="phone" id="myphone">
+                    <input type="tel" name="phone" id="myphone" required>
                     <label for="myid">NationalId</label>
-                    <input type="text" name="nationalId" id="myid">
+                    <input type="text" name="nationalId" id="myid" required>
+                    <label for="birthDate">BirthDate</label>
+                    <input type="date" name="birthDate" id="birthDate" value="0001-01-01">
+                    <label>NationalIdImage</label>
+                    <input type="file" class="form-control" id="nationalIdImage" name="nationalIdImage" required>
+                </div>
+                <div class="holder">
                     <label for="adults">Adults</label>
                     <input type="number" name="adults" id="adults" value="0">
                     <label for="children">Children</label>
                     <input type="number" name="children" id="children" value="0">
-                </div>
-                <div class="holder">
                     <label for="neededMoneyAmount">NeededMoneyAmount</label>
                     <input type="number" name="neededMoneyAmount" id="neededMoneyAmount" value="0">
-                    <label for="birthDate">BirthDate</label>
-                    <input type="date" name="birthDate" id="birthDate">
-                    <label for="dateLimit">DateLimit</label>
-                    <input type="text" name="dateLimit" id="dateLimit" placeholder="mm/ dd/ yyyy">
+                    <label for="paymentDate">PaymentDate</label>
+                    <input type="date" name="paymentDate" id="paymentDate" value="0001-01-01">
                     <label for="address">Address</label>
-                    <input type="text" name="address" id="address">
-                    <label for="title">Title</label>
-                    <input type="text" name="title" id="title">
+                    <input type="text" name="address" id="address" required>
                 </div>
                 <div class="holder">
+                    <label for="title">Title</label>
+                    <input type="text" name="title" id="title" required>
                     <label for="caseCategoryId">CaseCategoryId</label>
-                    <select name="caseCategoryId" id="caseCategoryId">
+                    <select name="caseCategoryId" id="caseCategoryId" required>
+                        <option value="Poverty">Poverty</option>
                         <option value="financialaid">Financial Aid</option>
-                        <option value="info">info</option>
-                        <option value="info">info</option>
                     </select>
                     <label for="casePriorityId">CasePriorityId</label>
                     <select name="casePriorityId" id="casePriorityId">
+                        <option value="Urgent">Urgent</option>
                         <option value="A">A</option>
                         <option value="B">B</option>
                         <option value="C">C</option>
@@ -108,6 +110,23 @@
                         <option value="Male">Male</option>
                         <option value="Female">Female</option>
                     </select>
+                    <label for="mediatorId">MediatorId</label>
+                    <select name="mediatorId" id="mediatorId">
+                        <option value="AhmedMedhat">Ahmed Medhat</option>
+                        <option value="Salah">Salah</option>
+                    </select>
+                </div>
+                <div class="holder">
+                    <label for="relationShipId">RelationShipId</label>
+                    <select name="relationShipId" id="relationShipId">
+                        <option value="Self">Self</option>
+                        <option value="info">info</option>
+                    </select>
+                    <label for="periodId">PeriodId</label>
+                    <select name="periodId" id="periodId">
+                        <option value="One">One</option>
+                        <option value="Two">Two</option>
+                    </select>
                     <label for="socialStatusId">SocialStatusId</label>
                     <select name="socialStatusId" id="socialStatusId">
                         <option value="Single">Single</option>
@@ -115,15 +134,19 @@
                     </select>
                     <label for="cityId">CityId</label>
                     <select name="cityId" id="cityId">
-                        <option value="Aga">Aga</option>
+                        <option value="6octobor">6 Octobor</option>
                         <option value="Mansoura">Mansoura</option>
                     </select>
-                </div>
-                <div class="holder">
                     <label for="regionId">RegionId</label>
                     <select name="regionId" id="regionId">
+                        <option value="Saa">Saa</option>
                         <option value="MetElamel">Met Elamel</option>
-                        <option value="info">info</option>
+                    </select>
+                </div> 
+                <div class="holder"> 
+                    <label for="geoLocationId">GeoLocationId</label>
+                    <select name="geoLocationId" id="geoLocationId">
+                        <option value="Elmahala">Elmahala</option>
                     </select>
                     <label for="statusId">StatusId</label>
                     <select name="statusId" id="statusId">
@@ -131,8 +154,8 @@
                         <option value="Accepted">Accepted</option>
                         <option value="Rejected">Rejected</option>
                     </select>
-                    <label for="feedBack">FeedBack</label>
-                    <textarea name="feedBack" id="feedBack" cols="30" rows="9"></textarea>
+                    <label for="story">Story</label>
+                    <textarea name="story" id="story" cols="30" rows="9"></textarea>
                 </div>
             </div>
             <input type="submit" value="Create" class="bg-gardient-dark text-white me-1 hvr-wobble-top">
@@ -142,10 +165,10 @@
         </form>
     </div>
 
-
+    
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/all.min.js"></script>
     <script src="js/sidebar.js"></script>
-
+    
 </body>
 </html>
