@@ -13,7 +13,7 @@
 }
 .mycaseform .holder {
     padding: 0 10px;
-    width: 25%;
+    width: 20%;
 }
 .mycaseform label {
     display: block;
@@ -47,6 +47,11 @@
 }
 ::placeholder {
     color: var(--main-color);
+}
+@media (max-width: 991px) {
+    .mycaseform .holder {
+        width: 33%;
+    }
 }
 @media (max-width: 767px) {
     .mycaseform .holder {
