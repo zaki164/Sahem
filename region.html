@@ -9,30 +9,12 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/sidebar.css">
     <link rel="stylesheet" href="css/navbar.css">
-    <link rel="stylesheet" href="css/case.css">
+    <link rel="stylesheet" href="css/region.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <title>Sahem</title>
 
-    <style>
-        .mycaseform {
-            width: 50%;
-            transform: translate(20%, 10%);
-        }
-        @media (max-width: 991px) {
-            .mycaseform {
-                transform: translate(0, 0);
-                margin: auto;
-                width: 60%;
-            }
-        }
-        @media (max-width: 767px) {
-            .mycaseform {
-                width: 90%;
-            }
-        }
-    </style>
 </head>
 <body>
     
@@ -81,24 +63,44 @@
         </div>
     </div>
 
-    <div class="mycaseform h-auto">
-        <form action="" method="get">
-            <label for="governorate">Governorate</label>
-            <select name="governorate" id="governorate">
-                <option value="El-Dakahlia">El-Dakahlia</option>
-                <option value="El-Gharbia">El-Gharbia</option>
-            </select>
-            <label for="city">City</label>
-            <select name="city" id="city">
-                <option value="Aga">Aga</option>
-                <option value="Mansoura">Mansoura</option>
-            </select>
-            <label for="myname">Name</label>
-            <input type="text" name="name" id="myname" required>
-            <input type="submit" value="Create" class="bg-gardient-dark text-white me-1 hvr-wobble-top">
-            <input type="reset" value="Cancel" class="bg-dang text-white hvr-wobble-bottom">
-        </form>
+
+
+    <div class="mycaseform">
+        <div class="hold">
+            <form asp-action="Create" method="post" enctype="multipart/form-data">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="cont">
+                    <div class="form-group w-100">
+                        <label asp-for="governorate" for="governorate">Governorate</label>
+                        <input asp-for="governorate" type="text" name="governorate" id="governorate" required>
+                        <span asp-validation-for="governorate" class="text-danger"></span>
+                    </div>
+                    <div class="form-group w-100">
+                        <label asp-for="city" for="city">city</label>
+                        <select asp-for="city" name="city" id="city">
+                            <option value="Aga">Aga</option>
+                            <option value="Mansoura">Mansoura</option>
+                        </select>
+                        <span asp-validation-for="city" class="text-danger"></span>
+                    </div>
+                    <div class="form-group w-100">
+                        <label asp-for="Name" for="Name">Name</label>
+                        <input asp-for="Name" type="text" name="Name" id="Name" required>
+                        <span asp-validation-for="Name" class="text-danger"></span>
+                    </div>
+                    <input type="submit" value="Create" class="bg-gardient-dark text-white me-1 hvr-wobble-top">
+                    <input type="reset" value="Cancel" class="bg-dang text-white hvr-wobble-bottom">
+                </div>
+            </form>
+        </div>
+        <div class="hold">
+            <div class="image">
+                <img src="imgs/landing-image.png" alt="">
+            </div>
+        </div>
     </div>
+
+
 
 
     <script src="js/bootstrap.bundle.min.js"></script>
