@@ -67,7 +67,7 @@
 
     <div class="mycaseform">
         <div class="hold">
-            <form asp-action="Create" method="post" enctype="multipart/form-data">
+            <form asp-action="Create" method="post" enctype="multipart/form-data" id="myform">
                 <div asp-validation-summary="ModelOnly" class="text-danger"></div>
                 <div class="cont">
                     <div class="form-group w-100">
@@ -228,10 +228,10 @@
                         <textarea asp-for="story" name="story" id="story" cols="30" rows="4"></textarea>
                         <span asp-validation-for="story" class="text-danger"></span>
                     </div>
-                    <input type="submit" value="Create" class="bg-gardient-dark text-white me-1 hvr-wobble-top">
-                    <input type="reset" value="Cancel" class="bg-dang text-white hvr-wobble-bottom">
-                    <input type="button" value="Pend" class="bg-warn text-white hvr-wobble-bottom">
-                    <input type="button" value="Accepted" class="bg-sucs text-white hvr-wobble-bottom">
+                    <button type="submit" class="bg-gardient-dark text-white me-1 hvr-wobble-top">Create</button>
+                    <a href="javascript:document.getElementById('myform').reset();" class="btn bg-dang text-white hvr-wobble-bottom">Cancel</a>
+                    <button class="bg-warn text-white hvr-wobble-bottom">Pend</button>
+                    <button class="bg-sucs text-white hvr-wobble-bottom">Accepted</button>
                 </div>
             </form>
         </div>
