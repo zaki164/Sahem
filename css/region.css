@@ -41,7 +41,9 @@
 }
 .mycaseform input,
 .mycaseform select,
-.mycaseform textarea {
+.mycaseform textarea,
+.mycaseform button,
+.mycaseform a.btn {
     margin: 4px 0;
     padding: 7px 20px;
     width: 100%;
@@ -59,9 +61,14 @@
 .mycaseform textarea {
     resize: none;
 }
+.btn-check:focus+.btn, .btn:focus {
+    box-shadow: none;
+}
 .mycaseform input[type="submit"],
 .mycaseform input[type="reset"],
-.mycaseform input[type="button"] {
+.mycaseform input[type="button"],
+.mycaseform button,
+.mycaseform a.btn {
     width: 140px;
     border: none;
     margin: 15px 0 10px;
@@ -97,6 +104,8 @@ label{
     .mycaseform input[type="submit"],
     .mycaseform input[type="reset"],
     .mycaseform input[type="button"],
+    .mycaseform button,
+    .mycaseform a.btn,
     .mycaseform .form-group {
         width: 100% !important;
     }
