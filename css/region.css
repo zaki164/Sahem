@@ -21,16 +21,19 @@
 .mycaseform .hold .image img {
     width: 100%;
     position: relative; 
-    animation: up-and-down 8s linear infinite;
+    animation: up-and-down 5s linear infinite;
 }
 .mycaseform .cont {
     display: flex;
     flex-wrap: wrap;
+    width: 70%;
+    margin-top: 30px;
+    margin-left: 50px;
 }
 .mycaseform .form-group {
     width: 50%;
     padding: 5px 10px;
-    margin-bottom: 5px;
+    margin: 5px;
 }
 .mycaseform label {
     display: block;
@@ -59,7 +62,7 @@
 .mycaseform input[type="submit"],
 .mycaseform input[type="reset"],
 .mycaseform input[type="button"] {
-    width: 180px;
+    width: 140px;
     border: none;
     margin: 15px 0 10px;
 }
@@ -100,10 +103,10 @@ label{
 }
 @keyframes up-and-down {
     0%, 100% {
-        top: 300px;
+        top: 0;
     }
     
     50% {
-        top: -400px;
+        top: -70px;
     }
 }
