@@ -9,18 +9,18 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/sidebar.css">
     <link rel="stylesheet" href="css/navbar.css">
-    <link rel="stylesheet" href="css/status.css">
+    <link rel="stylesheet" href="css/mediatorDetails.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <title>Sahem</title>
-
 </head>
 <body>
     
     <button class="mytoggler">
         <i class="fa-solid fa-bars fa-2x"></i>
     </button>
+
     <div class="side" id="demo">
         <a href="index.html" class="logo"><i class="fa-regular fa-hand-back-fist"></i><span>S</span>ahem</a>
         <ul class="mylinks">
@@ -64,27 +64,95 @@
     </div>
 
 
-    <div class="mystatusform">
+    <div class="mymediatorDetails">
         <div class="hold">
-            <form asp-action="Create" method="post" enctype="multipart/form-data" id="myform">
-                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-                <div class="cont">
-                    <div class="form-group w-100">
-                        <label asp-for="Name" for="Name">Name</label>
-                        <input asp-for="Name" type="text" name="Name" id="Name" required>
-                        <span asp-validation-for="Name" class="text-danger"></span>
-                    </div>
-                    <button type="submit" class="bg-gardient-dark text-white me-1 hvr-wobble-top">Create</button>
-                    <a href="#" class="btn bg-dang text-white hvr-wobble-bottom">Cancel</a>
-                </div>
-            </form>
+            <div class="mainImage">
+                <div class="holdImage"></div>
+            </div>
+            <div class="info w-100">
+                <label>Name</label>
+                <div>Son</div>
+            </div>
+            <div class="info">
+                <label>PhoneNumber</label>
+                <div>01071717171</div>
+            </div>
+            <div class="info">
+                <label>National Id</label>
+                <div>444444444</div>
+            </div>
+            <div class="info">
+                <label>Birthdate</label>
+                <div>16-4-2020</div>
+            </div>
+            <div class="info">
+                <label>Bio</label>
+                <div>Hello</div>
+            </div>
+            <div class="info">
+                <label>Governorate</label>
+                <div>Me</div>
+            </div>
+            <div class="info">
+                <label>City</label>
+                <div>Valhalla</div>
+            </div>
+            <div class="info">
+                <label>Region</label>
+                <div>Wanterval</div>
+            </div>
+            <div class="info">
+                <label>Job</label>
+                <div>Name</div>
+            </div>
+            <div class="info">
+                <label>Address</label>
+                <div>Name</div>
+            </div>
+            <div class="info">
+                <label>Date Registered</label>
+                <div>Name</div>
+            </div>
+            <div class="info">
+                <label>Gender</label>
+                <div>Name</div>
+            </div>
+            <div class="info">
+                <label>Social Status</label>
+                <div>Name</div>
+            </div>
         </div>
         <div class="hold">
-            <div class="image">
-                <img src="imgs/landing-image.png" alt="">
+            <div class="info w-100">
+                <label>National ID Image</label>
+                <div class="IDImage">
+                    <div class="IDImageholder"></div>
+                </div>
+            </div>
+            <div class="info reviews">
+                <label>Mediator Reviews</label>
+                <div class="reviewport">
+                    <div class="worth">
+                        <span class="smImage"></span>
+                        <span>Son</span>
+                        <span class="text-success">Worthy</span>
+                    </div>
+                    <div class="worth">
+                        <span class="smImage"></span>
+                        <span>Son</span>
+                        <span class="text-success">Worthy</span>
+                    </div>
+                    <div class="worth">
+                        <span class="smImage"></span>
+                        <span>Son</span>
+                        <span class="text-success">Worthy</span>
+                    </div>
+                    <textarea cols="30" rows="2" disabled>sss</textarea>
+                </div>
             </div>
         </div>
     </div>
+
 
 
     <script src="js/bootstrap.bundle.min.js"></script>
@@ -93,6 +161,7 @@
     <script src="js/jquery.nicescroll.min.js"></script>
     <script src="js/body.js"></script>
     <script src="js/sidebar.js"></script>
+    <script src="js/mediatorDetails.js"></script>
 
 </body>
 </html>
