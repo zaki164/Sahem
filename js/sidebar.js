@@ -29,3 +29,9 @@ lis.forEach(function (ele) {
         myheader.textContent = this.textContent + " /";
     }
 })
+$(function() {  
+    $(".side").niceScroll({
+        cursorcolor: "#366D9F",
+        cursorwidth: "7px",
+    });
+});
