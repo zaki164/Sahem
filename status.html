@@ -64,7 +64,7 @@
     </div>
 
 
-    <div class="mycaseform">
+    <div class="mystatusform">
         <div class="hold">
             <form asp-action="Create" method="post" enctype="multipart/form-data" id="myform">
                 <div asp-validation-summary="ModelOnly" class="text-danger"></div>
@@ -75,7 +75,7 @@
                         <span asp-validation-for="Name" class="text-danger"></span>
                     </div>
                     <button type="submit" class="bg-gardient-dark text-white me-1 hvr-wobble-top">Create</button>
-                    <a href="javascript:document.getElementById('myform').reset();" class="btn bg-dang text-white hvr-wobble-bottom">Cancel</a>
+                    <a href="#" class="btn bg-dang text-white hvr-wobble-bottom">Cancel</a>
                 </div>
             </form>
         </div>
