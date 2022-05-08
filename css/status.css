@@ -1,4 +1,4 @@
-.mycaseform {
+.mystatusform {
     position: relative;
     background-image: linear-gradient(130deg, rgb(255, 255, 255) 50%, rgb(227 227 227));
     width: 100%;
@@ -9,42 +9,42 @@
     display: flex;
     height: 350px;
 }
-.mycaseform .hold {
+.mystatusform .hold {
     width: 50%;
 }
-.mycaseform .hold .image {
+.mystatusform .hold .image {
     position: relative;
     width: 80%;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
 }
-.mycaseform .hold .image img {
+.mystatusform .hold .image img {
     width: 100%;
     position: relative; 
     animation: up-and-down 5s linear infinite;
 }
-.mycaseform .cont {
+.mystatusform .cont {
     display: flex;
     flex-wrap: wrap;
     width: 70%;
     margin-top: 80px;
     margin-left: 50px;
 }
-.mycaseform .form-group {
+.mystatusform .form-group {
     width: 50%;
     padding: 5px 10px;
     margin-bottom: 5px;
 }
-.mycaseform label {
+.mystatusform label {
     display: block;
     margin-bottom: 3px;
 }
-.mycaseform input,
-.mycaseform select,
-.mycaseform textarea,
-.mycaseform button,
-.mycaseform a.btn {
+.mystatusform input,
+.mystatusform select,
+.mystatusform textarea,
+.mystatusform button,
+.mystatusform a.btn {
     margin: 4px 0;
     padding: 7px 20px;
     width: 100%;
@@ -54,22 +54,22 @@
     caret-color: var(--main-color);
     color: var(--main-color);
 }
-.mycaseform input:focus,
-.mycaseform select:focus,
-.mycaseform textarea:focus {
+.mystatusform input:focus,
+.mystatusform select:focus,
+.mystatusform textarea:focus {
     outline: none;
 }
-.mycaseform textarea {
+.mystatusform textarea {
     resize: none;
 }
 .btn-check:focus+.btn, .btn:focus {
     box-shadow: none;
 }
-.mycaseform input[type="submit"],
-.mycaseform input[type="reset"],
-.mycaseform input[type="button"],
-.mycaseform button,
-.mycaseform a.btn {
+.mystatusform input[type="submit"],
+.mystatusform input[type="reset"],
+.mystatusform input[type="button"],
+.mystatusform button,
+.mystatusform a.btn {
     width: 140px;
     border: none;
     margin: 15px 0 10px;
@@ -94,20 +94,20 @@ label{
     color: var(--main-color);
 }
 @media (max-width: 767px) {
-    .mycaseform .hold:last-child {
+    .mystatusform .hold:last-child {
         display: none;
     }
-    .mycaseform .hold:first-child {
+    .mystatusform .hold:first-child {
         width: 100%;
     }
 }
 @media (max-width: 390px) {
-    .mycaseform input[type="submit"],
-    .mycaseform input[type="reset"],
-    .mycaseform input[type="button"],
-    .mycaseform button,
-    .mycaseform a.btn,
-    .mycaseform .form-group {
+    .mystatusform input[type="submit"],
+    .mystatusform input[type="reset"],
+    .mystatusform input[type="button"],
+    .mystatusform button,
+    .mystatusform a.btn,
+    .mystatusform .form-group {
         width: 100% !important;
     }
 }
