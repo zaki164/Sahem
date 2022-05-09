@@ -7,112 +7,123 @@
     color: var(--main-color);
     box-shadow: 0 0 10px #ccc;
     display: flex;
+    flex-wrap: wrap;
+    height: 620px;
+    overflow: auto;
 }
 .mycaseDetails .hold {
     width: 50%;
-}
-.mycaseDetails .hold .image {
-    position: relative;
-    width: 80%;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-}
-.mycaseDetails .hold .image img {
-    width: 100%;
-    position: relative; 
-    animation: up-and-down 5s linear infinite;
-}
-.mycaseDetails .cont {
+    padding: 5px 10px;
     display: flex;
     flex-wrap: wrap;
 }
-.mycaseDetails .form-group {
-    width: 50%;
-    padding: 5px 10px;
-    margin-bottom: 5px;
+.mycaseDetails .hold .mainImage {
+    width: 100%;
+}
+.mycaseDetails .hold .mainImage .holdImage {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: auto;
+    background-image: url(../imgs/avatar-05.png);
+    background-size: cover;
 }
 .mycaseDetails label {
     display: block;
     margin-bottom: 3px;
+    white-space: nowrap;
 }
-.mycaseDetails input,
-.mycaseDetails select,
-.mycaseDetails textarea,
-.mycaseDetails button,
-.mycaseDetails a.btn {
-    margin: 4px 0;
+.mycaseDetails .hold .info {
+    width: 50%;
+    margin: 5px 0;
+    padding: 5px;
+}
+.mycaseDetails .hold .info > div {
+    width: 100%;
+    border: 1px solid var(--main-color);
+    padding: 5px 15px;
+    border-radius: 15px;
+    margin-top: 5px;
+    background-color: rgb(150, 150, 150, .1);
+}
+.mycaseDetails .hold .info.reviews {
+    width: 100%;
+}
+.mycaseDetails .hold .info.reviews .reviewport {
+    margin-top: 12px;
+    border: none;
+}
+.mycaseDetails .hold .info .worth {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #ccc;
+    border-radius: 15px;
+    border-bottom: 1px solid white;
+}
+.mycaseDetails .hold .info .worth .smImage {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-image: url(../imgs/avatar-05.png);
+    background-size: cover;
+}
+.mycaseDetails .hold .info .IDImage {
+    padding: 5px 10px;
+    border: none;
+    background-color: #eee;
+    margin-top: 12px;
+}
+.mycaseDetails .hold .info .IDImageholder {
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+    background-image: url(../imgs/egypt-id-card.jpeg);
+    background-size: cover;
+}
+.mycaseDetails textarea {
+    margin: 10px 0;
     padding: 7px 20px;
     width: 100%;
     border: 1px solid var(--main-color);
     background-color: white;
-    border-radius: 30px;
+    border-radius: 10px;
     caret-color: var(--main-color);
     color: var(--main-color);
 }
-.mycaseDetails input:focus,
-.mycaseDetails select:focus,
 .mycaseDetails textarea:focus {
     outline: none;
 }
 .mycaseDetails textarea {
     resize: none;
 }
+.mycaseDetails a.btn {
+    width: 180px;
+    margin: 15px 0 10px;
+    padding: 7px 20px;
+    border: none;
+    border-radius: 30px;
+}
 .btn-check:focus+.btn, .btn:focus {
     box-shadow: none;
 }
-.mycaseDetails input[type="submit"],
-.mycaseDetails input[type="reset"],
-.mycaseDetails input[type="button"],
-.mycaseDetails button,
-.mycaseDetails a.btn {
-    width: 180px;
-    border: none;
-    margin: 15px 0 10px;
-}
-.selectimage {
-    text-align: center;
-    padding: 13px;
-    border: 1px solid var(--main-color);
-    border-radius: 30px;
-    overflow: hidden;
-}
-input[type="file"]{
-    display: none;
-}
-label{
-    cursor:pointer;
-}
-.imageName{
-    color:var(--main-color);
-}
-::placeholder {
-    color: var(--main-color);
-}
-@media (max-width: 767px) {
-    .mycaseDetails .hold:last-child {
-        display: none;
-    }
-    .mycaseDetails .hold:first-child {
-        width: 100%;
-    }
-}
 @media (max-width: 390px) {
-    .mycaseDetails input[type="submit"],
-    .mycaseDetails input[type="reset"],
-    .mycaseDetails input[type="button"],
-    .mycaseDetails button,
-    .mycaseDetails a.btn,
-    .mycaseDetails .form-group {
+    .mycaseDetails a.btn {
         width: 100% !important;
     }
 }
-@keyframes up-and-down {
-    0%, 100% {
-        top: 0;
+@media (max-width: 767px) {
+    .mycaseDetails .hold {
+        width: 100%;
     }
-    
-    50% {
-        top: -70px;
+}
+@media (max-width: 500px) {
+    .mycaseDetails .hold .info .worth {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .mycaseDetails .hold .info {
+        width: 100%;
     }
 }

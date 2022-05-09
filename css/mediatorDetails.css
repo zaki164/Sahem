@@ -7,6 +7,7 @@
     color: var(--main-color);
     box-shadow: 0 0 10px #ccc;
     display: flex;
+    flex-wrap: wrap;
     height: 620px;
     overflow: auto;
 }
@@ -44,10 +45,6 @@
     border-radius: 15px;
     margin-top: 5px;
     background-color: rgb(150, 150, 150, .1);
-}
-.mymediatorDetails .hold:first-child .info:nth-last-child(1) div,
-.mymediatorDetails .hold:first-child .info:nth-last-child(2) div {
-    margin-bottom: 40px;
 }
 .mymediatorDetails .hold .info.reviews {
     width: 100%;
@@ -102,14 +99,16 @@
     resize: none;
 }
 @media (max-width: 767px) {
-    .mymediatorDetails {
-        flex-direction: column;
-    }
     .mymediatorDetails .hold {
         width: 100%;
     }
-
 }
-@media (max-width: 390px) {
-
+@media (max-width: 500px) {
+    .mymediatorDetails .hold .info .worth {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .mymediatorDetails .hold .info {
+        width: 100%;
+    }
 }
