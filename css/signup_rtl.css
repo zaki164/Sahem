@@ -1,0 +1,11 @@
+.layout::before {
+    left: auto;
+    right: 0;
+}
+.layout .container a:first-child svg {
+    margin-right: auto;
+    margin-left: 5px;
+}
+.form .register li a:focus {
+    box-shadow: -2px -2px 10px #6c757dd4;
+}

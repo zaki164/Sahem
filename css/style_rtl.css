@@ -1,0 +1,11 @@
+.workwith .contain {
+    background-position: 20% 5%;
+}
+.workwith .contain::after {
+    left: auto;
+    right: 0;
+}
+.readmore svg {
+    margin-left: auto;
+    margin-right: 3px;
+}

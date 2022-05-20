@@ -1,0 +1,19 @@
+body {
+    font-family: 'Cairo', sans-serif;
+    font-weight: 600;
+}
+.bg-gardient-dark {
+    background-image: linear-gradient(130deg, #141727, #3a416f);
+}
+.bg-gardient-light {
+    background-image: linear-gradient(to left, #ffffff 40%, #e9d0ef);
+}
+.bg-dang {
+    background-image: linear-gradient(to left, rgb(162, 87, 87), rgb(161, 19, 19));
+}
+.bg-warn {
+    background-image: linear-gradient(to left, rgb(162, 153, 87), rgb(251 199 13));
+}
+.bg-sucs {
+    background-image: linear-gradient(to left, rgb(85 158 88), rgb(30 243 15));
+}

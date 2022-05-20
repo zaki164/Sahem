@@ -1,0 +1,11 @@
+.header nav {
+    box-shadow: 5px -6px 7px #a39c9c;
+}
+.header nav a:first-child svg {
+    margin-right: auto;
+    margin-left: 5px;
+}
+.layout .image img {
+    transform: skew(8deg);
+}
+

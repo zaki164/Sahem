@@ -1,0 +1,44 @@
+body {
+    padding: 20px 22% 20px 20px;
+    font-family: 'Cairo', sans-serif;
+    font-weight: 600;
+}
+.side a, p {
+    padding: 13px 15px;
+} 
+.side > ul ul {
+    padding-right: 15px;
+}
+.side ul li a svg {
+    margin-left: 15px;
+    box-shadow: 3px -1px 6px -2px;
+}
+.side {
+    left: auto;
+    right: 0;
+    padding: 30px 30px 30px 0;
+}
+.side .logo svg {
+    margin-left: 5px;
+}
+.side .logo::after {
+    left: auto;
+    right: 0;
+}
+.side li.active a {
+    box-shadow: 3px -1px 6px -4px;
+}
+@media (max-width: 991px) {
+    body {
+        padding-left: auto;
+        padding-right: 20px;
+    }
+    .side {
+        left: auto;
+        right: -100%;
+    }
+    .side.open {
+        left: auto;
+        right: 0;
+    }
+}
