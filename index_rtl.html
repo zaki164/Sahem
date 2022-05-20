@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,13 +7,19 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/main_rtl.css">
     <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="css/sidebar_rtl.css">
     <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/navbar_rtl.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style_rtl.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <title>Sahem</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;400;500;600;700;800&display=swap" rel="stylesheet">
+    <title>ساهم</title>
 </head>
 <body>
     
@@ -21,36 +27,36 @@
         <i class="fa-solid fa-bars fa-2x"></i>
     </button>
     <div class="side" id="demo">
-        <a href="index.html" class="logo"><i class="fa-regular fa-hand-back-fist"></i><span>S</span>ahem</a>
+        <a href="index_rtl.html" class="logo"><i class="fa-regular fa-hand-back-fist"></i><span>س</span>اهم</a>
         <ul class="mylinks">
-            <li class="active"><a href="index.html"><i class="fa-solid fa-table-columns"></i>Dashboard</a></li>
-            <li><a href="tables.html"><i class="fa-solid fa-table-cells"></i>Tables</a></li>
-            <li data-bs-toggle="collapse" data-bs-target="#mycollabse"><a href="#"><i class="fa-brands fa-bilibili"></i>Create</a></li>
+            <li class="active"><a href="index_rtl.html"><i class="fa-solid fa-table-columns"></i>لوحة التحكم</a></li>
+            <li><a href="tables_rtl.html"><i class="fa-solid fa-table-cells"></i>الجداول</a></li>
+            <li data-bs-toggle="collapse" data-bs-target="#mycollabse"><a href="#"><i class="fa-brands fa-bilibili"></i>انشاء</a></li>
             <ul id="mycollabse" class="collapse">
-                <li><a href="case.html"><i class="fa-solid fa-id-card"></i>Case</a></li>
-                <li><a href="mediator.html"><i class="fa-solid fa-id-card"></i>Mediator</a></li>
-                <li><a href="status.html"><i class="fa-solid fa-id-card"></i>Status</a></li>
-                <li><a href="region.html"><i class="fa-solid fa-id-card"></i>Region</a></li>
+                <li><a href="case_rtl.html"><i class="fa-solid fa-id-card"></i>حاله</a></li>
+                <li><a href="mediator_rtl.html"><i class="fa-solid fa-id-card"></i>وسيط</a></li>
+                <li><a href="status_rtl.html"><i class="fa-solid fa-id-card"></i>الحاله</a></li>
+                <li><a href="region_rtl.html"><i class="fa-solid fa-id-card"></i>منطقه</a></li>
             </ul>
-            <li><a href="#"><i class="fa-solid fa-vr-cardboard"></i>Virtual Reality</a></li>
-            <li><a href="index_rtl.html"><i class="fa-solid fa-key"></i>RTL</a></li>
+            <li><a href="#"><i class="fa-solid fa-vr-cardboard"></i>الخيال</a></li>
+            <li><a href="index.html"><i class="fa-solid fa-key"></i>ltr</a></li>
         </ul>
-        <p>Account Pages</p>
+        <p>صفحات اخري</p>
         <ul class="myAccPages">
-            <li><a href="#"><i class="fa-solid fa-user"></i>Profile</a></li>
-            <li><a href="signin.html"><i class="fa-solid fa-user-plus"></i>Sign In</a></li>
-            <li><a href="signup.html"><i class="fa-solid fa-id-card"></i>Sign Up</a></li>
+            <li><a href="#"><i class="fa-solid fa-user"></i>الشخصيه</a></li>
+            <li><a href="signup_rtl.html"><i class="fa-solid fa-user-plus"></i>التسجيل</a></li>
+            <li><a href="signin_rtl.html"><i class="fa-solid fa-id-card"></i>الدخول</a></li>
         </ul>
     </div>
 
     <div class="mynav w-100 mt-4 mb-5">
         <div class="container-fluid d-flex align-items-center flex-sm-row flex-column">
-            <h4 class="page">Dashboard /</h4>
-            <div class="d-flex ms-sm-auto mt-3 mt-sm-0">
+            <h4 class="page">لوحة التحكم /</h4>
+            <div class="d-flex me-sm-auto mt-3 mt-sm-0">
                 <div class="d-flex align-items-center myform position-relative">
                     <i class="fa fa-search"></i>
-                    <form action="" class="me-3">
-                        <input class="form-control myinput ps-5 rounded-3" type="text" placeholder=" Type here...">
+                    <form action="" class="ms-3">
+                        <input class="form-control myinput pe-5 rounded-3" dir="rtl" type="text" placeholder="اكتب هنا ...">
                     </form>
                 </div>
                 <div class="myi d-flex justify-content-around align-items-center">

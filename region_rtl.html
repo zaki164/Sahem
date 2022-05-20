@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/main_rtl.css">
+    <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="css/sidebar_rtl.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/navbar_rtl.css">
+    <link rel="stylesheet" href="css/region.css">
+    <link rel="stylesheet" href="css/region_rtl.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;400;500;600;700;800&display=swap" rel="stylesheet">
+    <title>ساهم</title>
+
+</head>
+<body>
+    
+    <button class="mytoggler">
+        <i class="fa-solid fa-bars fa-2x"></i>
+    </button>
+    <div class="side" id="demo">
+        <a href="index_rtl.html" class="logo"><i class="fa-regular fa-hand-back-fist"></i><span>س</span>اهم</a>
+        <ul class="mylinks">
+            <li class="active"><a href="index_rtl.html"><i class="fa-solid fa-table-columns"></i>لوحة التحكم</a></li>
+            <li><a href="tables_rtl.html"><i class="fa-solid fa-table-cells"></i>الجداول</a></li>
+            <li data-bs-toggle="collapse" data-bs-target="#mycollabse"><a href="#"><i class="fa-brands fa-bilibili"></i>انشاء</a></li>
+            <ul id="mycollabse" class="collapse">
+                <li><a href="case_rtl.html"><i class="fa-solid fa-id-card"></i>حاله</a></li>
+                <li><a href="mediator_rtl.html"><i class="fa-solid fa-id-card"></i>وسيط</a></li>
+                <li><a href="status_rtl.html"><i class="fa-solid fa-id-card"></i>الحاله</a></li>
+                <li><a href="region_rtl.html"><i class="fa-solid fa-id-card"></i>منطقه</a></li>
+            </ul>
+            <li><a href="#"><i class="fa-solid fa-vr-cardboard"></i>الخيال</a></li>
+            <li><a href="index.html"><i class="fa-solid fa-key"></i>ltr</a></li>
+        </ul>
+        <p>صفحات اخري</p>
+        <ul class="myAccPages">
+            <li><a href="#"><i class="fa-solid fa-user"></i>الشخصيه</a></li>
+            <li><a href="signup_rtl.html"><i class="fa-solid fa-user-plus"></i>التسجيل</a></li>
+            <li><a href="signin_rtl.html"><i class="fa-solid fa-id-card"></i>الدخول</a></li>
+        </ul>
+    </div>
+
+    <div class="mynav w-100 mt-4 mb-5">
+        <div class="container-fluid d-flex align-items-center flex-sm-row flex-column">
+            <h4 class="page">لوحة التحكم /</h4>
+            <div class="d-flex me-sm-auto mt-3 mt-sm-0">
+                <div class="d-flex align-items-center myform position-relative">
+                    <i class="fa fa-search"></i>
+                    <form action="" class="ms-3">
+                        <input class="form-control myinput pe-5 rounded-3" dir="rtl" type="text" placeholder="اكتب هنا ...">
+                    </form>
+                </div>
+                <div class="myi d-flex justify-content-around align-items-center">
+                    <a href="#"><i class="fa-solid fa-user"></i></a>
+                    <a href="#"><i class="fa-solid fa-gear"></i></a>
+                    <a href="#"><i class="fa-solid fa-bell"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="mylocationform">
+        <div class="hold">
+            <form asp-action="Create" method="post" enctype="multipart/form-data" id="myform">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="cont">
+                    <div class="form-group w-100">
+                        <label asp-for="governorate" for="governorate">المحافظه</label>
+                        <input asp-for="governorate" type="text" name="governorate" id="governorate" required>
+                        <span asp-validation-for="governorate" class="text-danger"></span>
+                    </div>
+                    <div class="form-group w-100">
+                        <label asp-for="city" for="city">المدينه</label>
+                        <select asp-for="city" name="city" id="city">
+                            <option value="Aga">اجا</option>
+                            <option value="Mansoura">المنصوره</option>
+                        </select>
+                        <span asp-validation-for="city" class="text-danger"></span>
+                    </div>
+                    <div class="form-group w-100">
+                        <label asp-for="Name" for="Name">الاسم</label>
+                        <input asp-for="Name" type="text" name="Name" id="Name" required>
+                        <span asp-validation-for="Name" class="text-danger"></span>
+                    </div>
+                    <button type="submit" class="bg-gardient-dark text-white ms-1 hvr-wobble-top">انشاء</button>
+                    <a href="#" class="btn bg-dang text-white hvr-wobble-bottom">الغاء</a>
+                </div>
+            </form>
+        </div>
+        <div class="hold">
+            <div class="image">
+                <img src="imgs/landing-image.png" alt="">
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/all.min.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery.nicescroll.min.js"></script>
+    <script src="js/body.js"></script>
+    <script src="js/sidebar.js"></script>
+
+</body>
+</html>

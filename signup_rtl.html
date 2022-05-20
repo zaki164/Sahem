@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/hover-min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/main_rtl.css">
+    <link rel="stylesheet" href="css/signup.css">
+    <link rel="stylesheet" href="css/signup_rtl.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;400;500;600;700;800&display=swap" rel="stylesheet">
+    <title>التسجيل</title>
+</head>
+    
+    <!-- start layout -->
+    <div class="layout p-3">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand text-light fw-bold" href="index_rtl.html"><i class="fa-regular fa-hand-back-fist"></i><span>س</span>اهم</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#targetDrop" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="targetDrop">
+                    <ul class="navbar-nav mb-2 mb-lg-0">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            الصفحات
+                        </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            التطبيقات
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            الموقع
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            الوثائق
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <a class="btn rounded-pill bg-gardient-dark text-light text-uppercase px-4 d-none d-lg-block" href="signup_rtl.html">التسجيل</a>
+            </div>
+        </nav>
+    </div>
+    <!-- end layout -->
+    <!-- start form  -->
+    <div class="form">
+        <h2>التسجيل عن طريق</h2>
+        <ul class="register list-unstyled">
+            <li><a href="#" class="hvr-grow"><i class="fa-brands fa-facebook"></i></a></li>
+            <li><a href="#" class="hvr-grow"><i class="fa-brands fa-apple"></i></a></li>
+            <li><a href="#" class="hvr-grow"><i class="fa-brands fa-google"></i></a></li>
+        </ul>
+        <h3>أو</h3>
+        <form action="" method="get">
+            <div class="form-floating mb-3 mt-3">
+                <input type="text" class="form-control" id="name" placeholder="الاسم" name="name" required >
+                <label for="name">الاسم</label>
+            </div>
+            <div class="form-floating mb-3 mt-3">
+                <input type="tel" class="form-control" id="phone" placeholder="رقم التليفون" name="phone" required>
+                <label for="phone">رقم التليفون</label>
+            </div>
+            <div class="form-floating mb-3 mt-3 social">
+                <select class="form-select" id="socialstatus" name="socialstatus">
+                    <option>عازب</option>
+                    <option>متزوج</option>
+                </select>
+                <label for="socialstatus" class="form-label">الحاله الاجتماعيه</label>
+            </div>
+            <div class="form-floating mb-3 mt-3 gender">
+                <select class="form-select" id="gender" name="gender">
+                    <option>رجل</option>
+                    <option>امراه</option>
+                </select>
+                <label for="gender" class="form-label">النوع</label>
+            </div>
+            <div class="form-floating mt-3 mb-3">
+                <input type="text" class="form-control" id="hosLocation" placeholder="موقع المستشفي" name="hosLocation">
+                <label for="hosLocation">موقع المستشفي</label>
+            </div>
+            <div class="form-floating mb-3 mt-3">
+                <input type="text" class="form-control" id="job" placeholder="العمل" name="job">
+                <label for="job">العمل</label>
+            </div>
+            <div class="form-floating mb-3 mt-3">
+                <input type="text" class="form-control" id="address" placeholder="العنوان" name="address">
+                <label for="address">العنوان</label>
+            </div>
+            <div class="form-floating mb-3 mt-3">
+                <input type="date" class="form-control" id="date" placeholder="التاريخ" name="date">
+                <label for="date">التاريخ</label>
+            </div>
+            <div class="form-floating mb-3 mt-3">
+                <select class="form-select" id="governorate" name="governorate">
+                    <option>القاهره</option>
+                    <option>الاسكندريه</option>
+                    <option>الجيزه</option>
+                </select>
+                <label for="governorate" class="form-label">المحافظه</label>
+            </div>
+            <div class="form-floating mb-3 mt-3">
+                <select class="form-select" id="city" name="المدينه">
+                    <option>مدينة نصر</option>
+                    <option>المنصوره</option>
+                    <option>طنطا</option>
+                </select>
+                <label for="city" class="form-label">المدينه</label>
+            </div>
+            <div class="form-floating mb-3 mt-3">
+                <select class="form-select" id="region" name="region">
+                    <option>Region 1</option>
+                    <option>Region 2</option>
+                </select>
+                <label for="region" class="form-label">المنطقه</label>
+            </div>
+            <div class="was-validated">
+                <div class="form-check mb-3">
+                    <input class="form-check-input" type="checkbox" id="myCheck" name="remember" required>
+                    <label class="form-check-label" for="myCheck">اوافق علي الشروط</label>
+                </div>
+            </div>
+            <button type="submit" class="btn bg-gardient-dark text-uppercase hvr-grow">التسجيل</button>
+            <p>عندك حساب بالفعل ؟ <a href="signin_rtl.html">الدخول</a></p>
+        </form>
+    </div>
+    <!-- end form  -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/all.min.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery.nicescroll.min.js"></script>
+    <script src="js/body.js"></script>
+    <script src="js/form.js"></script>
+</body>
+</html>

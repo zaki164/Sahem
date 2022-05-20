@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/hover-min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/main_rtl.css">
+    <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="css/sidebar_rtl.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/navbar_rtl.css">
+    <link rel="stylesheet" href="css/case.css">
+    <link rel="stylesheet" href="css/case_rtl.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;400;500;600;700;800&display=swap" rel="stylesheet">
+    <title>ساهم</title>
+</head>
+<body>
+    
+    <button class="mytoggler">
+        <i class="fa-solid fa-bars fa-2x"></i>
+    </button>
+
+    <div class="side" id="demo">
+        <a href="index_rtl.html" class="logo"><i class="fa-regular fa-hand-back-fist"></i><span>س</span>اهم</a>
+        <ul class="mylinks">
+            <li class="active"><a href="index_rtl.html"><i class="fa-solid fa-table-columns"></i>لوحة التحكم</a></li>
+            <li><a href="tables_rtl.html"><i class="fa-solid fa-table-cells"></i>الجداول</a></li>
+            <li data-bs-toggle="collapse" data-bs-target="#mycollabse"><a href="#"><i class="fa-brands fa-bilibili"></i>انشاء</a></li>
+            <ul id="mycollabse" class="collapse">
+                <li><a href="case_rtl.html"><i class="fa-solid fa-id-card"></i>حاله</a></li>
+                <li><a href="mediator_rtl.html"><i class="fa-solid fa-id-card"></i>وسيط</a></li>
+                <li><a href="status_rtl.html"><i class="fa-solid fa-id-card"></i>الحاله</a></li>
+                <li><a href="region_rtl.html"><i class="fa-solid fa-id-card"></i>منطقه</a></li>
+            </ul>
+            <li><a href="#"><i class="fa-solid fa-vr-cardboard"></i>الخيال</a></li>
+            <li><a href="index.html"><i class="fa-solid fa-key"></i>ltr</a></li>
+        </ul>
+        <p>صفحات اخري</p>
+        <ul class="myAccPages">
+            <li><a href="#"><i class="fa-solid fa-user"></i>الشخصيه</a></li>
+            <li><a href="signup_rtl.html"><i class="fa-solid fa-user-plus"></i>التسجيل</a></li>
+            <li><a href="signin_rtl.html"><i class="fa-solid fa-id-card"></i>الدخول</a></li>
+        </ul>
+    </div>
+
+    <div class="mynav w-100 mt-4 mb-5">
+        <div class="container-fluid d-flex align-items-center flex-sm-row flex-column">
+            <h4 class="page">لوحة التحكم /</h4>
+            <div class="d-flex me-sm-auto mt-3 mt-sm-0">
+                <div class="d-flex align-items-center myform position-relative">
+                    <i class="fa fa-search"></i>
+                    <form action="" class="ms-3">
+                        <input class="form-control myinput pe-5 rounded-3" dir="rtl" type="text" placeholder="اكتب هنا ...">
+                    </form>
+                </div>
+                <div class="myi d-flex justify-content-around align-items-center">
+                    <a href="#"><i class="fa-solid fa-user"></i></a>
+                    <a href="#"><i class="fa-solid fa-gear"></i></a>
+                    <a href="#"><i class="fa-solid fa-bell"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="mycaseform">
+        <div class="hold">
+            <form asp-action="Create" method="post" enctype="multipart/form-data" id="myform">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="cont">
+                    <div class="form-group w-100">
+                    <label asp-for="Name" for="Name">الاسم</label>
+                    <input asp-for="Name" type="text" name="Name" id="Name" required>
+                    <span asp-validation-for="Name" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="PhoneNumber" for="PhoneNumber">رقم التليفون</label>
+                        <input asp-for="PhoneNumber" type="tel" name="PhoneNumber" id="PhoneNumber" required>
+                        <span asp-validation-for="PhoneNumber" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="NationalId" for="NationalId">رقم البطاقه</label>
+                        <input asp-for="NationalId" type="text" name="NationalId" id="NationalId" required>
+                        <span asp-validation-for="NationalId" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="birthDate" for="birthDate">يوم الميلاد</label>
+                        <input asp-for="birthDate" type="date" name="birthDate" id="birthDate" value="0001-01-01">
+                        <span asp-validation-for="NationalId" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="paymentDate" for="paymentDate">وقت الدفع</label>
+                        <input asp-for="paymentDate" type="date" name="paymentDate" id="paymentDate" value="0001-01-01">
+                        <span asp-validation-for="paymentDate" class="text-danger"></span>
+                    </div> 
+                    <div class="form-group">
+                        <label asp-for="adults" for="adults">البالغين</label>
+                        <input asp-for="adults" type="number" name="adults" id="adults" value="0" required>
+                        <span asp-validation-for="adults" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="children" for="children">الاطفال</label>
+                        <input asp-for="children" type="number" name="children" id="children" value="0" required>
+                        <span asp-validation-for="children" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="neededMoneyAmount" for="neededMoneyAmount">الفلوس المحتاجه</label>
+                        <input asp-for="neededMoneyAmount" type="number" name="neededMoneyAmount" id="neededMoneyAmount" value="0" required>
+                        <span asp-validation-for="neededMoneyAmount" class="text-danger"></span>
+                    </div>    
+                    <div class="form-group">
+                        <label asp-for="title" for="title">عنوان الموضوع</label>
+                        <input asp-for="title" type="text" name="title" id="title" required>
+                        <span asp-validation-for="title" class="text-danger"></span>
+                    </div>
+                    <div class="form-group w-100">
+                        <label asp-for="address" for="address">العنوان</label>
+                        <input asp-for="address" type="text" name="address" id="address" required>
+                        <span asp-validation-for="address" class="text-danger"></span>
+                    </div>             
+                    <div class="form-group">
+                        <label asp-for="caseCategoryId" for="caseCategoryId">فئة الحاله</label>
+                        <select asp-for="caseCategoryId" name="caseCategoryId" id="caseCategoryId">
+                            <option value="Poverty">Poverty</option>
+                            <option value="financialaid">Financial Aid</option>
+                        </select>
+                        <span asp-validation-for="caseCategoryId" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="casePriorityId" for="casePriorityId">اهمية الحاله</label>
+                        <select asp-for="casePriorityId" name="casePriorityId" id="casePriorityId">
+                            <option value="Urgent">Urgent</option>
+                            <option value="A">A</option>
+                            <option value="B">B</option>
+                            <option value="C">C</option>
+                        </select>
+                        <span asp-validation-for="caseCategoryId" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="gender" for="gender">النوع</label>
+                        <select asp-for="gender" name="gender" id="gender">
+                            <option value="Male">ذكر</option>
+                            <option value="Female">انثي</option>
+                        </select>
+                        <span asp-validation-for="gender" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="mediatorId" for="mediatorId">الوسيط</label>
+                        <select asp-for="mediatorId" name="mediatorId" id="mediatorId">
+                            <option value="AhmedMedhat">Ahmed Medhat</option>
+                            <option value="Salah">Salah</option>
+                        </select>
+                        <span asp-validation-for="mediatorId" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="relationShipId" for="relationShipId">العلاقه</label>
+                        <select asp-for="relationShipId" name="relationShipId" id="relationShipId">
+                            <option value="Self">Self</option>
+                            <option value="info">info</option>
+                        </select>
+                        <span asp-validation-for="relationShipId" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="periodId" for="periodId">التكرار</label>
+                        <select asp-for="periodId" name="periodId" id="periodId">
+                            <option value="One">One</option>
+                            <option value="Two">Two</option>
+                        </select>
+                        <span asp-validation-for="periodId" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="socialStatus" for="socialStatus">الحاله الاجتماعيه</label>
+                        <select asp-for="socialStatus" name="socialStatus" id="socialStatus">
+                            <option value="Single">Single</option>
+                            <option value="Married">Married</option>
+                        </select>
+                        <span asp-validation-for="socialStatus" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="cityId" for="cityId">المدينه</label>
+                        <select asp-for="cityId" name="cityId" id="cityId">
+                            <option value="6octobor">مدينة نصر</option>
+                            <option value="Mansoura">المنصوره</option>
+                        </select>
+                        <span asp-validation-for="cityId" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="regionId" for="regionId">المنطقه</label>
+                        <select asp-for="regionId" name="regionId" id="regionId">
+                            <option value="Saa">Saa</option>
+                            <option value="MetElamel">Met Elamel</option>
+                        </select>
+                        <span asp-validation-for="regionId" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="geoLocationId" for="geoLocationId">اللوكيشن</label>
+                        <select asp-for="geoLocationId" name="geoLocationId" id="geoLocationId">
+                            <option value="Elmahala">المحله</option>
+                        </select>
+                        <span asp-validation-for="geoLocationId" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="statusId" for="statusId">وضع الحاله</label>
+                        <select asp-for="statusId" name="statusId" id="statusId">
+                            <option value="Pending">Pending</option>
+                            <option value="Accepted">Accepted</option>
+                            <option value="Rejected">Rejected</option>
+                        </select>
+                        <span asp-validation-for="statusId" class="text-danger"></span>
+                    </div>
+                    <div class="form-group w-50">
+                        <label asp-for="NationalIDImage" for="NationalIDImage">صورة البطاقه</label>
+                        <div class="selectimage">
+                            <label for="NationalIDImage">
+                                اختر صوره
+                                <i class="fa fa-camera"></i>
+                                <input asp-for="NationalIDImage" type="file" id="NationalIDImage" class="inputTag" name="NationalIDImage" required/>
+                                <br/>
+                                <span class="imageName"></span>
+                            </label>
+                        </div>
+                        <span asp-validation-for="NationalIDImage" class="text-danger"></span>
+                    </div>
+                    <div class="form-group w-100">
+                        <label asp-for="story" for="story">القصه</label>
+                        <textarea asp-for="story" name="story" id="story" cols="30" rows="4"></textarea>
+                        <span asp-validation-for="story" class="text-danger"></span>
+                    </div>
+                    <button type="submit" class="bg-gardient-dark text-white ms-1 hvr-wobble-top">انشاء</button>
+                    <a href="#" class="btn bg-dang text-white hvr-wobble-bottom">الغاء</a>
+                    <button class="bg-warn text-white hvr-wobble-bottom">انتظار</button>
+                    <button class="bg-sucs text-white hvr-wobble-bottom">موافقه</button>
+                </div>
+            </form>
+        </div>
+        <div class="hold">
+            <div class="image">
+                <img src="imgs/landing-image.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/all.min.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery.nicescroll.min.js"></script>
+    <script src="js/body.js"></script>
+    <script src="js/sidebar.js"></script>
+    <script src="js/case-mediator.js"></script>
+    
+    
+</body>
+</html>
